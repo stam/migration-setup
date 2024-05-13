@@ -1,13 +1,13 @@
 # Migration setup
 
 ```
-cd host
+cd host/proxy
 npm i && npm start
 ```
 
 ## Todo:
 
-- Setup legacy 1
-- Add redirects
+- ~~Setup legacy 1~~
+- ~~Add proxy~~
 - Setup SPA routing
-- Setup legacy 2
+- Redirect old routes to new routes
