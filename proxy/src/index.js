@@ -6,6 +6,13 @@ const app = express();
 const assetsLocation = path.join(__dirname, "../public");
 app.use(express.static(assetsLocation));
 
+// Rewrite logic
+app.get("/WebApp/Details.aspx", function (req, res) {
+  const { id } = req.query;
+
+  res.redirect(`/details/${id}`);
+});
+
 app.use(
   "/legacy",
   createProxyMiddleware({
